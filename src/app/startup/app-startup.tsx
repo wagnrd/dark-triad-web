@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { App } from '~app/app';
 
 const rootPath = '/';
@@ -10,9 +10,9 @@ async function renderApp(): Promise<void> {
 
     return new Promise((resolve) => {
         ReactDOM.render(
-            <Router basename={`${rootPath}`}>
+            <BrowserRouter basename={rootPath}>
                 <App />
-            </Router>,
+            </BrowserRouter>,
             document.getElementById('root'),
             resolve
         );
