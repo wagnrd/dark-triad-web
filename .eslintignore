@@ -1,0 +1,9 @@
+platform-server/
+service-worker/*.js
+src/core/assets/svgs/
+platform-lib/**/*.js
+src/proto/generated/*.js
+src/proto/generated/*.ts
+src/proto/generated/validate/*.js
+src/proto/generated/validate/*.ts
+translation/

@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "module": "es6",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "target": "es6",
+        "jsx": "react",
+        "baseUrl": "src",
+        "paths": {
+            "~*": [
+                "./*"
+            ]
+        },
+        "lib": [
+            "dom",
+            "webworker",
+            "es5",
+            "es6",
+            "es7",
+        ]
+    },
+    "files": [
+        "custom_modules/svg.d.ts"
+    ],
+    "include": [
+        "src/**/*",
+        "custom_modules"
+    ]
+}
