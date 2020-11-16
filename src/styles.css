@@ -1,4 +1,4 @@
-@import "./ui/menu-bar/src/menu-bar.css";
+@import "./app/ui/menu-bar/src/menu-bar.css";
 
 body {
     font-family: Arial, Helvetica, sans-serif;

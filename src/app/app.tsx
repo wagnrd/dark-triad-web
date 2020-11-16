@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
 import { Route, Switch } from 'react-router';
-import { MenuBar } from '~ui/menu-bar';
+
 import { HomeScreen, NewsScreen, DownloadsScreen } from './screens';
+import { MenuBar } from './ui/menu-bar';
 
 function App(): ReactElement {
     return (
