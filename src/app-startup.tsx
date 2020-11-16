@@ -7,8 +7,6 @@ import { App } from '~app/app';
 const rootPath = '/';
 
 async function renderApp(): Promise<void> {
-    console.log('[App] Rendering app...');
-
     return new Promise((resolve) => {
         ReactDOM.render(
             <BrowserRouter basename={rootPath}>
@@ -22,10 +20,10 @@ async function renderApp(): Promise<void> {
 
 async function start(): Promise<void> {
     try {
-        console.log('passed');
         await renderApp();
+        console.log('[App] App rendered');
     } catch (e) {
-        console.error(e);
+        console.error('[App] Error while rendering app:', e);
     }
 }
 
