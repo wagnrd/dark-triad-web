@@ -9,11 +9,28 @@
         "jsx": "react",
         "baseUrl": "src",
         "paths": {
-            "~*": ["./*"]
+            "~*": [
+                "./*"
+            ]
         },
-        "lib": ["dom", "webworker", "es5", "es6"],
+        "lib": [
+            "dom",
+            "webworker",
+            "es5",
+            "es6"
+        ],
         "skipLibCheck": true
     },
-    "files": ["src/core/modules/svg.d.ts"],
-    "include": ["src/app/**/*", "src/background-services/**/*", "src/connecting-services/**/*", "src/core/**/*","src/platform/**/*","src/ui/**/*","src/user/**/*"]
+    "files": [
+        "custom_modules/svg.d.ts"
+    ],
+    "include": [
+        "src/app/**/*",
+        "src/background-services/**/*",
+        "src/connecting-services/**/*",
+        "src/core/**/*",
+        "src/platform/**/*",
+        "src/ui/**/*",
+        "src/user/**/*"
+    ]
 }

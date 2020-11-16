@@ -1,1 +1,1 @@
-Web apperance for the MMORPG Dark Triad
+Web appearance for the MMORPG Dark Triad
