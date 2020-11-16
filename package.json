@@ -59,7 +59,7 @@
             "pre-push": "npm run compile && npm run lint && npx jest --clearCache && npm test"
         }
     },
-    "externals": {
-        "*.min.js": false
-    }
+    "browserslist": [
+        "last 1 Chrome version"
+    ]
 }
