@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+
 import { App } from '~app/app';
 
 const rootPath = '/';
@@ -21,6 +22,7 @@ async function renderApp(): Promise<void> {
 
 async function start(): Promise<void> {
     try {
+        console.log('passed');
         await renderApp();
     } catch (e) {
         console.error(e);

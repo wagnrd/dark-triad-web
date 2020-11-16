@@ -2,7 +2,6 @@
     "name": "tas600-connected-services",
     "version": "0.1.0",
     "description": "Web apperance for the MMORPG Dark Triad",
-    "main": "index.js",
     "author": "Denis Wagner",
     "dependencies": {
         "classnames": "^2.2.6",
@@ -47,7 +46,6 @@
         "build": "parcel build src/index.html --out-dir build/release --public-url ./",
         "start": "parcel src/index.html --out-dir build/dev",
         "compile": "tsc --noEmit --project tsconfig.compile.json",
-        "lint:precommit": "eslint $(git diff --name-only --cached --diff-filter=ACM | grep -e '.ts$' -e '.tsx$' || echo 'src/app/index.ts') --max-warnings 0",
         "lint": "eslint src/ --ext '.ts, .tsx' --max-warnings 0",
         "test": "jest --config jest.config.json",
         "test:coverage": "jest --collect-coverage --config jest.config.json",
@@ -55,7 +53,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run compile && npm run lint:precommit",
+            "pre-commit": "npm run compile && npm run lint",
             "pre-push": "npm run compile && npm run lint && npx jest --clearCache && npm test"
         }
     },

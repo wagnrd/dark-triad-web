@@ -25,6 +25,6 @@
     ],
     "include": [
         "src/**/*",
-        "custom_modules"
+        "custom_modules",
     ]
 }

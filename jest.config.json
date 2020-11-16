@@ -1,20 +1,14 @@
 {
     "clearMocks": true,
     "coverageDirectory": "coverage",
-    "moduleFileExtensions": [
-        "js",
-        "ts",
-        "tsx"
-    ],
+    "moduleFileExtensions": ["js", "ts", "tsx"],
     "moduleNameMapper": {
         "\\.(scss)$": "<rootDir>/src/test/mock.styles.ts",
         "\\.svg": "<rootDir>/src/test/mock.svg.ts",
         "\\.css": "<rootDir>/src/test/mock.css.ts",
         "^~(.*)$": "<rootDir>/src/$1"
     },
-    "coveragePathIgnorePatterns": [
-        "<rootDir>/src/proto/generated"
-    ],
+    "coveragePathIgnorePatterns": ["<rootDir>/src/proto/generated"],
     "preset": "ts-jest",
     "testRegex": "(/__tests__/.*|(\\.|/)(test))\\.[jt]sx?$"
 }
