@@ -6,8 +6,9 @@
     --text-lange: 25px;
     --text-title: 35px;
 
-    --color-accent: brown;
+    --color-accent: #A03000;
     --color-text: #444;
+    --color-highlight: #B04010;
 }
 
 body {

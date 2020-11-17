@@ -7,7 +7,7 @@
     height: 70px;
     padding-right: 15%;
 
-    background-color: brown;
+    background-color: var(--color-accent);
 }
 
 .menu-bar-title {
@@ -43,7 +43,6 @@
 }
 
 .menu-tile:hover {
-    background-color: burlywood;
-    color: black;
+    background-color: var(--color-highlight);
     cursor: pointer;
 }
