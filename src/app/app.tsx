@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { Route, Switch } from 'react-router';
 
 import { HomeScreen, NewsScreen, DownloadsScreen } from './screens';
-import { MenuBar } from './ui/menu-bar';
+import { MenuBar } from './ui';
 
 function App(): ReactElement {
     return (
