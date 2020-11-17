@@ -4,12 +4,12 @@ import { ClickHandler } from '~utils/function';
 
 interface MenuTileProps {
     caption: string;
-    callToAction: ClickHandler;
+    onClick: ClickHandler;
 }
 
-function MenuTile({ caption, callToAction }: MenuTileProps): ReactElement {
+function MenuTile({ caption, onClick }: MenuTileProps): ReactElement {
     return (
-        <div className="menu-tile" onClick={callToAction}>
+        <div className="menu-tile" onClick={onClick}>
             {caption}
         </div>
     );

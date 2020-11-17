@@ -1,4 +1,8 @@
 .menu-bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
     display: flex;
     height: 70px;
     padding-right: 15%;

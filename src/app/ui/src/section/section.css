@@ -1,0 +1,28 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.section-color-1 {
+    background-color: white;
+}
+
+.section-color-2 {
+    background-color: #EAEAEA;
+}
+
+.section-title {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    color: brown;
+}
+
+.section-content {
+    max-width: 85%;
+    width: 50rem;
+    margin: auto;
+}

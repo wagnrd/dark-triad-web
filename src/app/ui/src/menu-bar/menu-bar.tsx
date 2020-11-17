@@ -17,9 +17,9 @@ function MenuBar({ title }: MenuBarProps): ReactElement {
         <div className="menu-bar">
             <div className="menu-bar-title">{title}</div>
             <div className="menu-bar-tiles">
-                <MenuTile caption="Home" callToAction={goToHome} />
-                <MenuTile caption="News" callToAction={goToNews} />
-                <MenuTile caption="Downloads" callToAction={goToDownloads} />
+                <MenuTile caption="Home" onClick={goToHome} />
+                <MenuTile caption="News" onClick={goToNews} />
+                <MenuTile caption="Downloads" onClick={goToDownloads} />
             </div>
         </div>
     );
