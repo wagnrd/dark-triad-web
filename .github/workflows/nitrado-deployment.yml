@@ -29,4 +29,4 @@ jobs:
         username: ni816240_1ftp1
         password: ${{ secrets.password }}
         local-dir: ./build/release/
-        exclude: [.ftpquota, .htaccess]
+        exclude: '.ftpquota, .htaccess'
