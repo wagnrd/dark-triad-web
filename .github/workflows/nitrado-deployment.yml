@@ -28,4 +28,4 @@ jobs:
         server: wagnrd.de
         username: ni816240_1ftp1
         password: ${{ secrets.password }}
-        local-dir: ./build/release
+        local-dir: ./build/release/
