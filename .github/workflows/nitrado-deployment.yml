@@ -3,7 +3,7 @@ on:
     branches:
       - release
 
-name: Deploy website on push
+name: Nitrado build and deploy
 jobs:
   web-deploy:
     name: Deploy
