@@ -45,7 +45,7 @@
     "scripts": {
         "clean": "rimraf ./.cache ./build ./coverage",
         "build": "parcel build src/index.html --out-dir build/release --public-url ./",
-        "start": "parcel src/index.html --out-dir build/dev",
+        "start": "parcel src/index.html --out-dir build/dev --port 8000",
         "compile": "tsc --noEmit --project tsconfig.compile.json",
         "lint": "eslint src/ --ext '.ts, .tsx' --max-warnings 0",
         "test": "jest --config jest.config.json",
