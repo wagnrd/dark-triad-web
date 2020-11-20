@@ -3,12 +3,13 @@
 
 :root {
     --text-small: 15px;
-    --text-lange: 25px;
+    --text-large: 18px;
+    --text-larger: 25px;
     --text-title: 35px;
 
     --color-accent: #A03000;
     --color-text: #444;
-    --color-highlight: #B04010;
+    --color-highlight: #C0501A;
 }
 
 body {
@@ -19,8 +20,21 @@ body {
     font-size: 18px; 
 }
 
-.text-link {
+.text-small {
     font-size: var(--text-small);
+}
+
+.text-color-accent {
     color: var(--color-accent);
+}
+
+.text-link {
+    color: var(--color-accent);
+    text-decoration: none;
     cursor: pointer;
+}
+
+.text-link:hover {
+    color: var(--color-highlight);
+    text-decoration: underline;
 }
