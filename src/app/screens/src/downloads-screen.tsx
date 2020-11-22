@@ -1,8 +1,9 @@
 import React from 'react';
 import { ReactElement } from 'react';
+import { Section } from '~app/ui';
 
 function DownloadsScreen(): ReactElement {
-    return <div>Downloads</div>;
+    return <Section>Under construction</Section>;
 }
 
 export { DownloadsScreen };
