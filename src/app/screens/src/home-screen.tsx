@@ -3,6 +3,7 @@ import { ReactElement } from 'react';
 import { useHistory } from 'react-router';
 
 import { Section, Quote, TextLink } from '~app/ui';
+import { SectionList } from '~app/ui/src/section/section-list';
 import { latestArticle } from './news-screen';
 
 function HomeScreen(): ReactElement {
@@ -10,7 +11,7 @@ function HomeScreen(): ReactElement {
     const goToNews = () => push('news');
 
     return (
-        <>
+        <SectionList>
             <Section>
                 <strong>Dark Triad</strong> is an upcomming <Quote>Realm of the Mad God</Quote>-like MMORPG. It will be
                 free-to-play and will follow a strict non-pay-to-win policy. In this game you will be able to play
@@ -44,7 +45,7 @@ function HomeScreen(): ReactElement {
                 faucibus et, consequat quis dui. Quisque quis congue risus. Maecenas interdum augue vitae ante elementum
                 pretium.
             </Section>
-        </>
+        </SectionList>
     );
 }
 

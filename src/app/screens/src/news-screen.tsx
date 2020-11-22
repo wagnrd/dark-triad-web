@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { ReactElement } from 'react';
 
 import { Section, TextLink } from '~app/ui';
+import { SectionList } from '~app/ui/src/section/section-list';
 
 interface Article {
     title: string;
@@ -48,16 +49,16 @@ function latestArticle(): Article {
     return articles[0];
 }
 
-function renderArticle(article: Article, currentPosition: number): ReactElement {
+function renderArticle(article: Article, articleNr: number): ReactElement {
     return (
-        <Section caption={article.title} key={`news-article-${currentPosition}`}>
+        <Section caption={article.title} key={`news-article-${articleNr}`}>
             {article.full}
         </Section>
     );
 }
 
 function NewsScreen(): ReactElement {
-    return <>{articles.map((article, currentPosition) => renderArticle(article, currentPosition))}</>;
+    return <SectionList>{articles.map(renderArticle)}</SectionList>;
 }
 
 export { NewsScreen, latestArticle };

@@ -1,17 +1,4 @@
-import classNames from 'classnames';
-import React, { ReactElement, ReactNode, useEffect, useState } from 'react';
-
-let next = 0;
-
-function getColorClass(): string {
-    const current = next++;
-
-    if (current % 2 === 0) {
-        return 'section-color-1';
-    } else {
-        return 'section-color-2';
-    }
-}
+import React, { ReactElement, ReactNode } from 'react';
 
 function renderCaption(caption: string): ReactElement {
     if (caption) {
@@ -25,24 +12,13 @@ interface SectionProps {
 }
 
 function Section({ caption, children }: SectionProps): ReactElement {
-    const [colorClass] = useState(getColorClass());
-
-    // reset alternating coloring
-    useEffect(() => () => {
-        next = 0;
-    });
-
-    const className = classNames('section', colorClass);
-
     return (
-        <>
-            <div className={className}>
-                <div className="section-content">
-                    {renderCaption(caption)}
-                    <div>{children}</div>
-                </div>
+        <div className="section">
+            <div className="section-content">
+                {renderCaption(caption)}
+                <div>{children}</div>
             </div>
-        </>
+        </div>
     );
 }
 
