@@ -1,14 +1,20 @@
 @import "./app/ui/src/menu-bar/menu-bar.css";
 @import "./app/ui/src/section/section.css";
+@import "./app/screens/src/home-screen/home-screen.css";
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Light';
     src: url('./app/assets/fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('./app/assets/fonts/Roboto/Roboto-Regular.ttf');
 }
 
 :root {
     --text-small: 15px;
-    --text-large: 18px;
+    --text-large: 21px;
     --text-larger: 25px;
     --text-title: 35px;
 
@@ -21,7 +27,7 @@ body {
     margin: 0px;
 
     color: var(--color-text);
-    font-family: Roboto;
+    font-family: 'Roboto Light';
     font-size: 18px; 
 }
 

@@ -27,3 +27,12 @@
     margin: auto;
     line-height: 27px;;
 }
+
+.section-sub-title {
+    margin: 20px 0px 10px 0px;
+    font-size: var(--text-large);
+}
+
+.section-sub-title.first {
+    margin-top: 0px;
+}

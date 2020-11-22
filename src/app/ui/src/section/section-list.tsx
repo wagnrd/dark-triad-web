@@ -6,11 +6,19 @@ interface SectionListProps {
 }
 
 function renderSection(section: ReactElement, sectionNr: number): ReactElement {
+    let colorClass: string;
+
     if (sectionNr % 2 === 0) {
-        return <div className="section-color-1">{section}</div>;
+        colorClass = 'section-color-1';
     } else {
-        return <div className="section-color-2">{section}</div>;
+        colorClass = 'section-color-2';
     }
+
+    return (
+        <div className={colorClass} key={`section-${sectionNr}`}>
+            {section}
+        </div>
+    );
 }
 
 function SectionList({ children }: SectionListProps): ReactElement {

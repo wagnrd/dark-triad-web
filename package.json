@@ -4,6 +4,7 @@
     "description": "Web apperance for the MMORPG Dark Triad",
     "author": "Denis Wagner",
     "dependencies": {
+        "app": "^0.1.0",
         "classnames": "^2.2.6",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
