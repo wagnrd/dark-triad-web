@@ -1,6 +1,7 @@
 @import "./app/ui/src/menu-bar/menu-bar.css";
 @import "./app/ui/src/section/section.css";
 @import "./app/screens/src/home-screen/home-screen.css";
+@import "./app/ui/src/footer/footer.css";
 
 @font-face {
     font-family: 'Roboto Light';
@@ -20,11 +21,15 @@
 
     --color-accent: #A03000;
     --color-text: #505050;
+    --color-text-inv: white;
     --color-highlight: #C0501A;
+
+    --banner-height: 70px;
 }
 
-body {
-    margin: 0px;
+body, html {
+    height: 100%;
+    margin: 0;
 
     color: var(--color-text);
     font-family: 'Roboto Light';
@@ -39,13 +44,19 @@ body {
     color: var(--color-accent);
 }
 
+.text-color-text-inv {
+    color: var(--color-text-inv);
+}
+
 .text-link {
-    color: var(--color-accent);
     text-decoration: none;
     cursor: pointer;
 }
 
 .text-link:hover {
-    color: var(--color-highlight);
     text-decoration: underline;
+}
+
+.content {
+    min-height: calc(100vh - 2 * var(--banner-height));
 }

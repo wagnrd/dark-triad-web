@@ -20,7 +20,7 @@
     margin-right: 50px;
 
     font-size: 35px;
-    color: white;
+    color: var(--color-text-inv);
 }
 
 .menu-bar-tiles {

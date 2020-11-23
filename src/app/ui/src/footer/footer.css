@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+    color: var(--color-text-inv);
+    background-color: var(--color-accent);
+}
+
+.footer-entry {
+    margin: 0px 20px 0px 20px;
+}
