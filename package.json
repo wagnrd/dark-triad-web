@@ -41,7 +41,7 @@
     },
     "scripts": {
         "clean": "rimraf ./.cache ./build ./coverage",
-        "build": "parcel build src/index.html --out-dir build/release --public-url --no-source-maps ./",
+        "build": "parcel build src/index.html --no-source-maps --out-dir build/release --public-url ./",
         "start": "parcel src/index.html --out-dir build/dev --port 1234 --no-source-maps",
         "compile": "tsc --noEmit --project tsconfig.compile.json",
         "lint": "eslint src/ --ext '.ts, .tsx' --max-warnings 0"
