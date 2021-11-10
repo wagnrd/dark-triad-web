@@ -9,7 +9,7 @@ interface MenuTileProps {
 
 function MenuTile({ caption, onClick }: MenuTileProps): ReactElement {
     return (
-        <div className="menu-tile" onClick={onClick}>
+        <div className="menu-tile menu-tile-animation" onClick={onClick}>
             {caption}
         </div>
     );

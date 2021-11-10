@@ -26,7 +26,7 @@ function App(): ReactElement {
                 </Switch>
             </div>
 
-            <Footer />
+            <Footer copyright="© 2021 - Denis Wagner" />
         </>
     );
 }

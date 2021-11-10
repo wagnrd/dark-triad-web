@@ -2,7 +2,11 @@ import React, { ReactElement } from 'react';
 import { useHistory } from 'react-router';
 import { TextLink } from '~app/ui/text-link';
 
-function Footer(): ReactElement {
+interface FooterProps {
+    copyright: string;
+}
+
+function Footer({copyright}: FooterProps): ReactElement {
     const { push } = useHistory();
     const goToImpressum = () => push('imprint');
 
@@ -13,7 +17,7 @@ function Footer(): ReactElement {
                     Imprint
                 </TextLink>
             </div>
-            <div className="footer-entry">© 2020 - Denis Wagner</div>
+            <div className="footer-entry">{copyright}</div>
         </div>
     );
 }

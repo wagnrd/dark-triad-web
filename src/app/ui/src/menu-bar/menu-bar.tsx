@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { useHistory } from 'react-router';
 import { MenuTile } from './menu-tile';
+import {MenuAccountTile} from "~app/ui/src/menu-bar/menu-account-tile";
 
 interface MenuBarProps {
     title: string;
@@ -21,6 +22,7 @@ function MenuBar({ title }: MenuBarProps): ReactElement {
                 <MenuTile caption="News" onClick={goToNews} />
                 <MenuTile caption="Downloads" onClick={goToDownloads} />
             </div>
+            <MenuAccountTile />
         </div>
     );
 }
