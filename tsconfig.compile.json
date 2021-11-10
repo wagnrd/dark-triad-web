@@ -15,15 +15,11 @@
         },
         "lib": [
             "dom",
-            "webworker",
             "es5",
             "es6"
         ],
         "skipLibCheck": true
     },
-    "files": [
-        "custom_modules/svg.d.ts"
-    ],
     "include": [
         "src/app/**/*",
         "src/background-services/**/*",

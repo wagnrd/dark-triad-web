@@ -15,14 +15,10 @@
         },
         "lib": [
             "dom",
-            "webworker",
             "es5",
             "es6"
         ]
     },
-    "files": [
-        "custom_modules/svg.d.ts"
-    ],
     "include": [
         "src/**/*",
         "custom_modules",
