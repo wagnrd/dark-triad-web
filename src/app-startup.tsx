@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import {App} from '~app/app';
-import {Auth0Provider} from "@auth0/auth0-react";
+import { App } from '~app/app';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 const rootPath = '/';
 
@@ -16,10 +16,9 @@ async function renderApp(): Promise<void> {
                 redirectUri={window.location.origin}
             >
                 <BrowserRouter basename={rootPath}>
-                    <App/>
+                    <App />
                 </BrowserRouter>
-            </Auth0Provider>
-            ,
+            </Auth0Provider>,
             document.getElementById('root'),
             resolve
         );
@@ -37,4 +36,4 @@ async function start(): Promise<void> {
 
 start();
 
-export {start};
+export { start };

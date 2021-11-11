@@ -6,7 +6,7 @@ interface FooterProps {
     copyright: string;
 }
 
-function Footer({copyright}: FooterProps): ReactElement {
+function Footer({ copyright }: FooterProps): ReactElement {
     const { push } = useHistory();
     const goToImpressum = () => push('imprint');
 

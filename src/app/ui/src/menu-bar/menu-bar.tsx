@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { useHistory } from 'react-router';
 import { MenuTile } from './menu-tile';
-import {MenuAccountTile} from "~app/ui/src/menu-bar/menu-account-tile";
+import { MenuAccountTile } from '~app/ui/src/menu-bar/menu-account-tile';
 
 interface MenuBarProps {
     title: string;
