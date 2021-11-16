@@ -8,7 +8,15 @@
     align-items: center;
     height: 70px;
 
-    background-color: var(--color-accent);
+    background-image: url("../../../../assets/textures/bottom-bar/BottomBar_Background.png");
+}
+
+.menu-bar-bottom-decoration {
+    position: absolute;
+    top: 65px;
+    height: 12px;
+    width: 100%;
+    background-image: url("../../../../assets/textures/bottom-bar/BottomBar_Border.png");
 }
 
 .menu-bar-title {

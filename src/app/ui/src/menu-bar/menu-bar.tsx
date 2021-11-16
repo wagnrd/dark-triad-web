@@ -8,11 +8,14 @@ interface MenuBarProps {
 
 function MenuBar({ children: menuTiles, title }: MenuBarProps): ReactElement {
     return (
-        <div className="menu-bar">
-            <div className="menu-bar-title">{title}</div>
-            <div className="menu-bar-tiles">{menuTiles}</div>
-            <MenuAccountTile />
-        </div>
+        <>
+            <div className="menu-bar">
+                <div className="menu-bar-title">{title}</div>
+                <div className="menu-bar-tiles">{menuTiles}</div>
+                <MenuAccountTile />
+                <div className="menu-bar-bottom-decoration" />
+            </div>
+        </>
     );
 }
 

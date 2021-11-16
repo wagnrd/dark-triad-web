@@ -14,6 +14,7 @@ function Footer({ children: footerEntries, copyright }: FooterProps): ReactEleme
 
     return (
         <div className="footer">
+            <div className="footer-top-decoration" />
             {formattedFooterEntries}
             <div className="footer-entry">{copyright}</div>
         </div>

@@ -5,9 +5,18 @@
     height: 70px;
 
     color: var(--color-text-inv);
-    background-color: var(--color-accent);
+    background-image: url("../../../../assets/textures/bottom-bar/BottomBar_Background.png");
 }
 
 .footer-entry {
     margin: 0px 20px 0px 20px;
+}
+
+.footer-top-decoration {
+    position: absolute;
+    margin-top: -66px;
+    height: 12px;
+    width: 100%;
+    background-image: url("../../../../assets/textures/bottom-bar/BottomBar_Border.png");
+    transform: scaleY(-1);
 }
