@@ -1,7 +1,8 @@
 import { Section } from './src/section/section';
 import { MenuBar } from './src/menu-bar/menu-bar';
+import { MenuTile } from './src/menu-bar/menu-tile';
 import { Quote } from './src/quote';
-import { TextLink } from './text-link';
+import { TextLink } from './src/text-link';
 import { Footer } from './src/footer/footer';
 
-export { MenuBar, Footer, Section, Quote, TextLink };
+export { MenuBar, MenuTile, Footer, Section, Quote, TextLink };

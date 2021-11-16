@@ -1,22 +1,20 @@
 import React, { ReactElement } from 'react';
-import { useHistory } from 'react-router';
-import { TextLink } from '~app/ui/text-link';
 
 interface FooterProps {
+    children: ReactElement[];
     copyright: string;
 }
 
-function Footer({ copyright }: FooterProps): ReactElement {
-    const { push } = useHistory();
-    const goToImpressum = () => push('imprint');
+function Footer({ children: footerEntries, copyright }: FooterProps): ReactElement {
+    const formattedFooterEntries = footerEntries.map((footerEntry, i) => (
+        <div className="footer-entry" key={i}>
+            {footerEntry}
+        </div>
+    ));
 
     return (
         <div className="footer">
-            <div className="footer-entry">
-                <TextLink inv onClick={goToImpressum}>
-                    Imprint
-                </TextLink>
-            </div>
+            {formattedFooterEntries}
             <div className="footer-entry">{copyright}</div>
         </div>
     );

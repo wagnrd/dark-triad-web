@@ -1,6 +1,7 @@
-import { DownloadsScreen } from './src/downloads-screen';
 import { HomeScreen } from './src/home-screen/home-screen';
-import { ImprintScreen } from './src/imprint';
+import { DownloadsScreen } from './src/downloads-screen';
 import { NewsScreen } from './src/news-screen';
+import { ImprintScreen } from './src/imprint-screen';
+import { PrivacyPolicyScreen } from './src/privacy-policy-screen';
 
-export { DownloadsScreen, HomeScreen, NewsScreen, ImprintScreen };
+export { HomeScreen, DownloadsScreen, NewsScreen, ImprintScreen, PrivacyPolicyScreen };
