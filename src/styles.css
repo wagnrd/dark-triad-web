@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Roboto Light';
-    src: url('./app/assets/fonts/Roboto/Roboto-Light.ttf');
+    src: url('./assets/fonts/Roboto/Roboto-Light.ttf');
 }
 
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('./app/assets/fonts/Roboto/Roboto-Regular.ttf');
+    src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
 }
 
 :root {
